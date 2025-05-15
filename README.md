@@ -6,3 +6,5 @@
 
 -A1lex-kz
 -yandex-practicum
+
+https://github.com/A1ex-kz/ono-tebe-nado-fd
