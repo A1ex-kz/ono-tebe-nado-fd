@@ -1,12 +1,10 @@
 .content-section {
   box-sizing: border-box;
   width: 1100px;
-  min-height: 100px;
   margin: auto;
 }
 
 .header {
-  height: 293px;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items:center;
@@ -66,7 +64,7 @@
 .cover {
   display: flex;
   flex-direction: column;
-  height: 757px;
+  min-height: 757px;
   background-image: url('../images/cover.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -86,33 +84,28 @@
 .title{
   display: flex;
   flex-direction: column;
-  min-height: 385px;
-  width: 1000px;
   margin: 165px 50px 106px 50px;
   font-size: 100px;
   font-weight: 700;
-  text-align:center;
   text-transform: uppercase;
   letter-spacing: 3rcap;
-  gap: 20px;
   z-index: 1;
 }
 
 .aligned-text{
-  position: relative;
-  right: 340px;
+  align-self: start;
 }
 
 .aligned-text_center{
-  position: relative;
-  left: 17px;
-  bottom: 2px;
+  align-self: center;
+  margin-top: 15px;
+  margin-left: 35px;
 }
 
 .aligned-text_right{
-  position: relative;
-  left: 325px;
-  bottom: 7px;
+  margin-top: 18px;
+  margin-left: 613px;
+ 
 }
 
 .cover__description{
@@ -122,7 +115,6 @@
   font-size: 22px;
   margin: 0 50px 50px 50px;
   width: 1000px;
-  min-height: 51px;
   text-transform: uppercase;
   z-index: 1;
   word-spacing: 20px;
@@ -132,18 +124,16 @@
 .bet-button{
   text-transform: uppercase;
   background-color: transparent;
-  color: #FFFFFF;
+  color: currentColor;
   font-weight: 500;
   padding: 12px 32px 11px 31px;
-  border-radius: 1px;
-  border-color: #FFFFFF;
-  
+  border: 1px solid #FFFFFF;
 }
 
 .lots {
   padding: 0 24px;
   margin-top: 180px;
-  height: 723px;
+  
 }
 
 .lots__heading{
@@ -155,6 +145,7 @@
 
 .lots__card-list{
   display: flex;
+  flex-wrap: wrap;
   gap: 25px;
 }
 
@@ -214,15 +205,15 @@
 
 .lots__look-more-link{
   text-decoration: underline;
+  text-underline-offset: 4px;
   font-size: 20px;
   margin: 0 0 0 40px;
 }
 
 .about {
-  height: 595px;
   display: grid;
   grid-template-columns: 334px auto;
-  margin-top: 120px;
+  margin-top: 118px;
   padding: 0 24px;
 }
 
@@ -253,6 +244,12 @@
 .about__text{
   font-size: 20px;
   padding-left: 24px;
+  width: 688px;
+}
+
+.about__text-second-paragraph{
+  
+  width: 717px;
 }
 
 .about__column p+p {
@@ -265,7 +262,6 @@
   justify-items: center;
   align-items: start;
   padding: 0px 50px 82px;
-  height: 180px;
   margin-top: 180px;
 }
 
@@ -292,15 +288,10 @@
   font-size: 18px;
 }
 
-.footer__menu-link{
-  text-decoration-line: underline;
-  text-underline-offset: 4px;
-}
-
 .footer__menu-link_active{
   text-decoration: none;
 }
 
-.footer .footer_contacts{
+.footer .contacts{
   justify-self: left;
 }
