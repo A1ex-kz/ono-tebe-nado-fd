@@ -38,7 +38,7 @@
 
 .logo-image{
   width: 148px;
-  height: 105px;
+  height: 104px;
   padding-top: 4px;
 }
 
@@ -64,7 +64,6 @@
 .cover {
   display: flex;
   flex-direction: column;
-  min-height: 757px;
   background-image: url('../images/cover.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -105,7 +104,6 @@
 .aligned-text_right{
   margin-top: 18px;
   margin-left: 613px;
- 
 }
 
 .cover__description{
@@ -247,11 +245,6 @@
   width: 688px;
 }
 
-.about__text-second-paragraph{
-  
-  width: 717px;
-}
-
 .about__column p+p {
   margin-top: 24px;
 }
@@ -264,8 +257,6 @@
   padding: 0px 50px 82px;
   margin-top: 180px;
 }
-
-
 
 .footer__social-list{
   display: flex;
